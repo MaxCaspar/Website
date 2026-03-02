@@ -78,6 +78,18 @@ body {
   top: var(--space-3);
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .ascii-layer {
   color: var(--color-ascii);
   font-family: var(--font-mono);
@@ -161,6 +173,32 @@ body {
 
 .site-footer p {
   margin: 0;
+}
+
+.site-footer-link-row {
+  margin-top: 0.4rem;
+}
+
+.site-footer-github {
+  align-items: center;
+  color: rgba(205, 214, 244, 0.88);
+  display: inline-flex;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.site-footer-github svg {
+  display: block;
+  fill: currentColor;
+  height: 0.72rem;
+  width: 0.72rem;
+}
+
+.site-footer-github:hover,
+.site-footer-github:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
 }
 
 .hero-panel {
